@@ -9,6 +9,8 @@ const routes: Routes = [
 		path: '',
 		children: [ { path: 'home', component: HomeComponent } ]
 	},
+	// path: 'content',
+	// 	component: HomeComponent,
 	{
 		path: 'content',
 		children: [
