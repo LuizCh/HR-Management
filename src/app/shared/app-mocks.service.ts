@@ -8,8 +8,8 @@ export class AppMocksService {
 				name: 'Winston',
 				company: 'Ow',
 				age: 30,
-				birthday: 'white',
-				favoriteColor: '',
+				birthday: '20/09/1987',
+				favoriteColor: 'white',
 				project: 'Gibraltar'
 			},
 			{

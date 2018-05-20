@@ -21,7 +21,7 @@ export class AuthenticationService {
 	}
 
 	public isAuthenticated(): boolean {
-		if (this.usernameInput === this.username) {
+		if (this.usernameInput === this.username && this.passwordInput === this.password) {
 			this.authenticated = true;
 		} else {
 			this.authenticated = false;

@@ -7,13 +7,8 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
 	{
 		path: '',
-		children: [ { path: 'home', component: HomeComponent } ]
-	},
-	// path: 'content',
-	// 	component: HomeComponent,
-	{
-		path: 'content',
 		children: [
+			{ path: '', component: HomeComponent },
 			{ path: 'employees', component: EmployeesComponent },
 			{ path: 'projects', component: ProjectsComponent }
 		]

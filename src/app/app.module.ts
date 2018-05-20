@@ -21,10 +21,15 @@ import { AuthenticationService } from './authentication.service';
 				loadChildren: './authentication/authentication.module#AuthenticationModule'
 			},
 			{
-				path: 'content',
+				path: 'home',
 				loadChildren: './content/content.module#ContentModule',
 				canLoad: [ AuthenticationGuard ]
 			}
+			// {
+			// 	path: 'login',
+			// 	pathMatch: 'full',
+			// 	redirectTo: ''
+			// }
 		])
 	],
 	providers: [ AuthenticationGuard, AuthenticationService ],

@@ -9,7 +9,7 @@ export class AuthenticationGuard implements CanLoad {
 
 	canLoad(): boolean {
 		if (!this.authenticationService.isAuthenticated()) {
-			this.router.navigate([ '' ]);
+			// this.router.navigate([ 'login' ]);
 			return false;
 		}
 		return true;
